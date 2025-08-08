@@ -1,0 +1,42 @@
+<!-- Home.ejs -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <style>
+        body {
+            background-color: skyblue;
+            font-family: Arial, sans-serif;
+            color: white;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        ul.pankaj {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul.pankaj li {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student List</h1>
+    <ul class="pankaj">
+        <% studentList.forEach(function(student, index) { %>
+            <li><%= index + 1 %>. <%= student.name %></li>
+        <% }); %>
+    </ul>
+</body>
+</html>
