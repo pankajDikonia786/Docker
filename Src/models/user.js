@@ -9,7 +9,7 @@ module.exports = (sequelize) => {
         paranoid: true,
         timestamps: true,
         freezeTableName: true,
-        schema: "common",
+        // schema: "common",
         createdAt: "created_date",
         updatedAt: "updated_date",
         deletedAt: "deleted_date",
